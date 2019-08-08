@@ -1,10 +1,16 @@
 package amazonPage;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import utilityLibrary.SetUpPage;
 
 public class HeaderPage extends SetUpPage {
+	
+	WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));
+	WebElement searchButton = driver.findElement(By.id("nav-search-submit-text"));
+	
+	
 
 	public void clickTodayDealLink() {
 		driver.findElement(By.xpath("//a[contains(text(),'Deals')]")).click();
@@ -23,6 +29,10 @@ public class HeaderPage extends SetUpPage {
 	}
 	
 	public void fillSearchBox(String text) {
+
+		lab.fill(searchBox, text);
+		lab.click(searchButton);
+		
 		
 	}
 	

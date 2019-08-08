@@ -1,5 +1,6 @@
 package utilityLibrary;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -39,6 +40,19 @@ public class Utility {
 
 	public String getText(WebElement findElement) {
 		return findElement.getText();
+	}
+	
+	public void fill(WebElement elem, String text) {
+		try{
+		elem.sendKeys(text);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void click(WebElement elem) {
+
+		elem.click();
 	}
 	
 }

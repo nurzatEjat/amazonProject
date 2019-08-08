@@ -81,7 +81,26 @@ public class HeaderTest extends SetUpPage{
 		
 	}
 	
-	
+	/**
+	 * Verify search functionality 
+	 */
+	@Test
+	public void AP_1005() {
+		header.verifyHomePageTitle();
+		header.fillSearchBox("camera");
+		plp.verifyLandOnpage();
+		for(String temp :plp.getProductName()) {
+			if(temp.contains("camera")) {
+				System.out.println(temp);
+			}else {
+				Assert.fail("Product name doesn't contains: camera "+temp);
+			}
+		}
+		
+		
+		
+		
+	}
 
 	
 	

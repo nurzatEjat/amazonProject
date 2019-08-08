@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import amazonPage.HeaderPage;
+import amazonPage.ProductListPage;
 import amazonPage.TodayDealPage;
 
 public class SetUpPage {
@@ -14,6 +15,7 @@ public class SetUpPage {
 	public static Utility lab ;
 	public static HeaderPage header = new HeaderPage();
 	public static TodayDealPage TDP = new TodayDealPage();
+	public static ProductListPage plp = new ProductListPage();
 	
 	@BeforeMethod
 	public void startTest() {
