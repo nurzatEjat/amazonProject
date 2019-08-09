@@ -7,8 +7,6 @@ import utilityLibrary.SetUpPage;
 
 public class HeaderPage extends SetUpPage {
 	
-	WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));
-	WebElement searchButton = driver.findElement(By.id("nav-search-submit-text"));
 	
 	
 
@@ -30,6 +28,11 @@ public class HeaderPage extends SetUpPage {
 	
 	public void fillSearchBox(String text) {
 
+		WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));
+//		WebElement searchButton = driver.findElement(By.id("nav-search-submit-text"));
+		WebElement searchButton = driver.findElement(By.xpath("//*[@id='nav-search-submit-text']/..//input"));
+
+		
 		lab.fill(searchBox, text);
 		lab.click(searchButton);
 		

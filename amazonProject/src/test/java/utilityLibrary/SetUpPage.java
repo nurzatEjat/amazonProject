@@ -25,6 +25,7 @@ public class SetUpPage {
 		lab =  new Utility(driver);
 		
 		driver.get("https://www.amazon.com");
+		driver.manage().window().fullscreen();
 	}
 	
 	@AfterMethod

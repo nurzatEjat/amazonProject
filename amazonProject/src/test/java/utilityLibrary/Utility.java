@@ -51,7 +51,7 @@ public class Utility {
 	}
 
 	public void click(WebElement elem) {
-
+		wait(2);
 		elem.click();
 	}
 	

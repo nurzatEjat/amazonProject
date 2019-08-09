@@ -50,7 +50,7 @@ public class HeaderTest extends SetUpPage {
 		Assert.assertTrue(isSignInDisplay, "User NOT land on Sign In page!");
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void AP_1004() {
 
 		header.verifyHomePageTitle();
@@ -65,14 +65,13 @@ public class HeaderTest extends SetUpPage {
 	/**
 	 * Verify search functionality
 	 */
-	
 	@Test
 	public void AP_1005() {
 		header.verifyHomePageTitle();
 		header.fillSearchBox("camera");
 		plp.verifyLandOnpage();
 		for (String temp : plp.getProductName()) {
-			if (temp.contains("camera")) {
+			if (temp.toLowerCase().contains("camera")) {
 				System.out.println(temp);
 			} else {
 				Assert.fail("Product name doesn't contains: camera " + temp);
