@@ -14,10 +14,7 @@ public class HeaderPage extends SetUpPage {
 	By todayDealLink2= By.xpath("//a[contains(text(),'Deals')]");
 	By todayDealLink3 = By.xpath("//a[contains(text(),'Deals')]");
 	
-	
-	public static void main(String[] args) {
-		System.out.println(locator.getLocator("todayDealLink"));
-	}
+
 	
 
 	public void clickTodayDealLink() {
