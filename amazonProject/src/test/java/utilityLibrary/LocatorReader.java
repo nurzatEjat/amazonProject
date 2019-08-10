@@ -26,8 +26,10 @@ public class LocatorReader {
 	}
 	
 	public String getLocator(String locatorName) {
-		String result = prop.getProperty(locatorName);
-		return result;
+
+		
+		
+		return null;
 	}
 	
 	
