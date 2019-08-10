@@ -7,11 +7,21 @@ import utilityLibrary.SetUpPage;
 
 public class HeaderPage extends SetUpPage {
 	
+	By todayDealLink = By.xpath("//a[contains(text(),'Deals')]");
+	By todaydiscountLink = By.xpath("//a[contains(text(),'Deals')]");
+	By dealLink = By.xpath("//a[contains(text(),'Deals')]");
+	By todayDealLink1 = By.xpath("//a[contains(text(),'Deals')]");
+	By todayDealLink2= By.xpath("//a[contains(text(),'Deals')]");
+	By todayDealLink3 = By.xpath("//a[contains(text(),'Deals')]");
 	
+	
+	public static void main(String[] args) {
+		System.out.println(locator.getLocator("todayDealLink"));
+	}
 	
 
 	public void clickTodayDealLink() {
-		driver.findElement(By.xpath("//a[contains(text(),'Deals')]")).click();
+		lab.click(lab.findElement(todayDealLink));
 		lab.wait(5);
 	}
 

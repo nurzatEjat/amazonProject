@@ -55,4 +55,9 @@ public class Utility {
 		elem.click();
 	}
 	
+	public WebElement findElement(By by) {
+		WebElement returnElem = driver.findElement(by);  //add explicit wait
+		return returnElem;
+	}
+	
 }

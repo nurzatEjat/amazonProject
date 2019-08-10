@@ -65,7 +65,7 @@ public class HeaderTest extends SetUpPage {
 	/**
 	 * Verify search functionality
 	 */
-	@Test
+	@Test(enabled = false)
 	public void AP_1005() {
 		header.verifyHomePageTitle();
 		header.fillSearchBox("camera");
@@ -80,6 +80,12 @@ public class HeaderTest extends SetUpPage {
 
 		plp.sortByIndex(2);
 
+	}
+	
+	
+	@Test
+	public void test() {
+		lab.wait(2);
 	}
 
 }

@@ -16,6 +16,10 @@ public class SetUpPage {
 	public static HeaderPage header = new HeaderPage();
 	public static TodayDealPage TDP = new TodayDealPage();
 	public static ProductListPage plp = new ProductListPage();
+	public static LocatorReader locator = new LocatorReader();
+	ConfigurationReader conf = new ConfigurationReader();
+	
+	
 	
 	@BeforeMethod
 	public void startTest() {
@@ -24,7 +28,7 @@ public class SetUpPage {
 		driver = new ChromeDriver();
 		lab =  new Utility(driver);
 		
-		driver.get("https://www.amazon.com");
+		driver.get(conf.setConfiguration("Url"));
 		driver.manage().window().fullscreen();
 	}
 	
