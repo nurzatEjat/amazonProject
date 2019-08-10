@@ -2,23 +2,23 @@ package amazonPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import utilityLibrary.SetUpPage;
 
 public class HeaderPage extends SetUpPage {
+
+
+	//PageFactory
 	
-	By todayDealLink = By.xpath("//a[contains(text(),'Deals')]");
-	By todaydiscountLink = By.xpath("//a[contains(text(),'Deals')]");
-	By dealLink = By.xpath("//a[contains(text(),'Deals')]");
-	By todayDealLink1 = By.xpath("//a[contains(text(),'Deals')]");
-	By todayDealLink2= By.xpath("//a[contains(text(),'Deals')]");
-	By todayDealLink3 = By.xpath("//a[contains(text(),'Deals')]");
-	
+	@FindBy(xpath="")
+	WebElement todayDeal;
+
+	@FindBy(id="twotabsearchtextbox") WebElement searchBox;
 
 	
-
 	public void clickTodayDealLink() {
-		lab.click(lab.findElement(todayDealLink));
+		lab.click(lab.findElement(locator.getLocator("header.todayDealLink")));
 		lab.wait(5);
 	}
 
@@ -35,7 +35,6 @@ public class HeaderPage extends SetUpPage {
 	
 	public void fillSearchBox(String text) {
 
-		WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));
 //		WebElement searchButton = driver.findElement(By.id("nav-search-submit-text"));
 		WebElement searchButton = driver.findElement(By.xpath("//*[@id='nav-search-submit-text']/..//input"));
 

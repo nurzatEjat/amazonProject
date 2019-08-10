@@ -11,8 +11,9 @@ import utilityLibrary.SetUpPage;
 public class ProductListPage extends SetUpPage{
 
 	
+	
 	public void verifyLandOnpage() {
-		driver.findElement(By.id("s-refinements"));
+		driver.findElement(locator.getLocator("plp.leftNavBar"));
 	}
 	
 	
@@ -27,7 +28,7 @@ public class ProductListPage extends SetUpPage{
 	}
 	
 	public void sortByIndex(int index) {
-		WebElement dropdown = driver.findElement(By.xpath("//select[@class='a-native-dropdown']"));
+		WebElement dropdown = locator.getElement("plp.dropdown");
 		
 		lab.selectDropdownByIndex(dropdown, index);
 	}
