@@ -6,7 +6,7 @@
       <class name="amazonProject.HeaderTest">
         <methods>
           <include name="startTest"/>
-          <include name="test"/>
+          <include name="AP_1001"/>
           <include name="endTest"/>
         </methods>
       </class> <!-- amazonProject.HeaderTest -->

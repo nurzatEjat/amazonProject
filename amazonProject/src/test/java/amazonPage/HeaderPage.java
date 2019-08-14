@@ -3,18 +3,12 @@ package amazonPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import utilityLibrary.SetUpPage;
 
 public class HeaderPage extends SetUpPage {
 
-
-	//PageFactory
-	
-	@FindBy(xpath="")
-	WebElement todayDeal;
-
-	@FindBy(id="twotabsearchtextbox") WebElement searchBox;
 
 	
 	public void clickTodayDealLink() {
@@ -34,15 +28,11 @@ public class HeaderPage extends SetUpPage {
 	}
 	
 	public void fillSearchBox(String text) {
-
-//		WebElement searchButton = driver.findElement(By.id("nav-search-submit-text"));
+		WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
 		WebElement searchButton = driver.findElement(By.xpath("//*[@id='nav-search-submit-text']/..//input"));
 
-		
 		lab.fill(searchBox, text);
 		lab.click(searchButton);
-		
-		
 	}
 	
 	public void signIn(String userName, String password) {

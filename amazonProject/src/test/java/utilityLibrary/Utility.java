@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Utility {
 
 	
-	WebDriver driver;
+	private WebDriver driver;
 	
 
 	
