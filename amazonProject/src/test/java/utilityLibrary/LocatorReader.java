@@ -86,6 +86,7 @@ public class LocatorReader extends SetUpPage{
 	public WebElement getElement(String locatorName) {
 		WebElement result = null;
 		result = lab.findElement(getLocator(locatorName));
+		
 		return result;
 	}
 

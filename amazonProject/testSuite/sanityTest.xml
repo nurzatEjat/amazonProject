@@ -1,0 +1,12 @@
+<suite name="BoraTest">
+	<test name="SanityTest">
+		<classes>
+			<class name="amazonTest.HeaderTest">
+				<methods>
+					<exclude name="AP_1001"/>
+				</methods>
+			</class>
+			<class name="amazonTest.Product" ></class>
+		</classes>
+	</test>
+</suite>

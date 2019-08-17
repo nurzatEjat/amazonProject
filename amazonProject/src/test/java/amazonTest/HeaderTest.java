@@ -1,4 +1,4 @@
-package amazonProject;
+package amazonTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,7 +10,7 @@ import utilityLibrary.SetUpPage;
 
 public class HeaderTest extends SetUpPage {
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void AP_1001() {
 
 		header.verifyHomePageTitle();
@@ -26,7 +26,7 @@ public class HeaderTest extends SetUpPage {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void AP_1002() {
 		String expectPageTitle = "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
 		String title = driver.getTitle();
@@ -50,7 +50,7 @@ public class HeaderTest extends SetUpPage {
 		Assert.assertTrue(isSignInDisplay, "User NOT land on Sign In page!");
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void AP_1004() {
 
 		header.verifyHomePageTitle();
@@ -65,7 +65,7 @@ public class HeaderTest extends SetUpPage {
 	/**
 	 * Verify search functionality
 	 */
-	@Test(enabled = true)
+	@Test
 	public void AP_1005() {
 		header.verifyHomePageTitle();
 		header.fillSearchBox("camera");

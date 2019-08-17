@@ -1,5 +1,6 @@
 package amazonPage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,7 +10,7 @@ import utilityLibrary.SetUpPage;
 
 public class TodayDealPage extends SetUpPage{
 
-	
+
 	//PageFactory
 	@FindBy(xpath="//div[contains(@class,'gbh1-bold')]") 
 	WebElement pageHeader;

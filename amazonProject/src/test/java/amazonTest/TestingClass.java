@@ -1,4 +1,4 @@
-package amazonProject;
+package amazonTest;
 
 import org.openqa.selenium.By;
 

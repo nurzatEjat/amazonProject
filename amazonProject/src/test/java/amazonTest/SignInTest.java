@@ -1,13 +1,14 @@
-package amazonProject;
+package amazonTest;
+
+import org.testng.annotations.Test;
 
 import utilityLibrary.SetUpPage;
-import utilityLibrary.Utility;
 
 public class SignInTest extends SetUpPage {
 
 
-
-	public void test() {
+	@Test
+	public void AP_1012() {
 		lab.wait(5);
 	}
 	
