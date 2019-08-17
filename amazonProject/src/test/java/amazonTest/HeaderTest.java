@@ -5,13 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import amazonPage.HeaderPage;
+import reportGenerator.ExtentTestManager;
 import utilityLibrary.SetUpPage;
 
 public class HeaderTest extends SetUpPage {
 
 	@Test(enabled = true)
 	public void AP_1001() {
+		ExtentTestManager.startTest("AP_1001", "Testing for AP_1001 scenario.");
 
 		header.verifyHomePageTitle();
 		header.clickTodayDealLink();

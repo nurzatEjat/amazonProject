@@ -1,43 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="4" total="11" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-17T15:22:31Z" name="BoraTest" finished-at="2019-08-17T15:22:57Z" duration-ms="26164">
+  <suite started-at="2019-08-17T18:38:50Z" name="InClassTest" finished-at="2019-08-17T18:40:05Z" duration-ms="75013">
     <groups>
     </groups>
-    <test started-at="2019-08-17T15:22:31Z" name="SanityTest" finished-at="2019-08-17T15:22:57Z" duration-ms="26164">
-      <class name="amazonTest.HeaderTest">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:amazonTest.HeaderTest@3d34d211]" started-at="2019-08-17T15:22:31Z" name="setUpTest" finished-at="2019-08-17T15:22:31Z" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.HeaderTest@3d34d211]" started-at="2019-08-17T15:22:31Z" name="startTest" finished-at="2019-08-17T15:22:34Z" duration-ms="3154" status="PASS">
+    <test started-at="2019-08-17T18:38:50Z" name="RegressionTest" finished-at="2019-08-17T18:40:05Z" duration-ms="75013">
+      <class name="amazonTest.SearchTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.SearchTest@399c4be1]" started-at="2019-08-17T18:39:41Z" name="startTest" finished-at="2019-08-17T18:39:44Z" duration-ms="2770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="AP_1004()[pri:0, instance:amazonTest.HeaderTest@3d34d211]" started-at="2019-08-17T15:22:34Z" name="AP_1004" finished-at="2019-08-17T15:22:48Z" duration-ms="14690" status="PASS">
+        <test-method signature="AP_1011()[pri:0, instance:amazonTest.SearchTest@399c4be1]" started-at="2019-08-17T18:39:44Z" name="AP_1011" finished-at="2019-08-17T18:39:49Z" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AP_1011 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.SearchTest@399c4be1]" started-at="2019-08-17T18:39:49Z" name="endTest" finished-at="2019-08-17T18:39:49Z" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.SearchTest@399c4be1]" started-at="2019-08-17T18:39:49Z" name="startTest" finished-at="2019-08-17T18:39:52Z" duration-ms="2797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="AP_1012()[pri:0, instance:amazonTest.SearchTest@399c4be1]" started-at="2019-08-17T18:39:52Z" name="AP_1012" finished-at="2019-08-17T18:39:57Z" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AP_1012 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.SearchTest@399c4be1]" started-at="2019-08-17T18:39:57Z" name="endTest" finished-at="2019-08-17T18:39:57Z" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- amazonTest.SearchTest -->
+      <class name="amazonTest.SignInTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.SignInTest@291caca8]" started-at="2019-08-17T18:39:57Z" name="startTest" finished-at="2019-08-17T18:40:00Z" duration-ms="2852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="AP_1012()[pri:0, instance:amazonTest.SignInTest@291caca8]" started-at="2019-08-17T18:40:00Z" name="AP_1012" finished-at="2019-08-17T18:40:05Z" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AP_1012 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.SignInTest@291caca8]" started-at="2019-08-17T18:40:05Z" name="endTest" finished-at="2019-08-17T18:40:05Z" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- amazonTest.SignInTest -->
+      <class name="amazonTest.HeaderTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:38:50Z" name="setUpTest" finished-at="2019-08-17T18:38:50Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:38:50Z" name="startTest" finished-at="2019-08-17T18:38:54Z" duration-ms="3976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="AP_1001()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:38:54Z" name="AP_1001" finished-at="2019-08-17T18:39:06Z" duration-ms="12130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AP_1001 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:06Z" name="endTest" finished-at="2019-08-17T18:39:06Z" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:06Z" name="startTest" finished-at="2019-08-17T18:39:09Z" duration-ms="2650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="AP_1002()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:09Z" name="AP_1002" finished-at="2019-08-17T18:39:14Z" duration-ms="5328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AP_1002 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:14Z" name="endTest" finished-at="2019-08-17T18:39:15Z" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:15Z" name="startTest" finished-at="2019-08-17T18:39:17Z" duration-ms="2823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="AP_1004()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:17Z" name="AP_1004" finished-at="2019-08-17T18:39:32Z" duration-ms="15080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AP_1004 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.HeaderTest@3d34d211]" started-at="2019-08-17T15:22:48Z" name="endTest" finished-at="2019-08-17T15:22:49Z" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.HeaderTest@33c911a1]" started-at="2019-08-17T18:39:32Z" name="endTest" finished-at="2019-08-17T18:39:33Z" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- amazonTest.HeaderTest -->
       <class name="amazonTest.Product">
-        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.Product@22fcf7ab]" started-at="2019-08-17T15:22:49Z" name="startTest" finished-at="2019-08-17T15:22:51Z" duration-ms="2736" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonTest.Product@45b4c3a9]" started-at="2019-08-17T18:39:33Z" name="startTest" finished-at="2019-08-17T18:39:36Z" duration-ms="2920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="AP_1010()[pri:0, instance:amazonTest.Product@22fcf7ab]" started-at="2019-08-17T15:22:51Z" name="AP_1010" finished-at="2019-08-17T15:22:56Z" duration-ms="5003" status="PASS">
+        <test-method signature="AP_1010()[pri:0, instance:amazonTest.Product@45b4c3a9]" started-at="2019-08-17T18:39:36Z" name="AP_1010" finished-at="2019-08-17T18:39:41Z" duration-ms="5005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AP_1010 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.Product@22fcf7ab]" started-at="2019-08-17T15:22:56Z" name="endTest" finished-at="2019-08-17T15:22:57Z" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonTest.Product@45b4c3a9]" started-at="2019-08-17T18:39:41Z" name="endTest" finished-at="2019-08-17T18:39:41Z" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- amazonTest.Product -->
-    </test> <!-- SanityTest -->
-  </suite> <!-- BoraTest -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- InClassTest -->
 </testng-results>

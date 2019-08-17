@@ -1,0 +1,19 @@
+<suite name="InClassTest">
+    <listeners>
+        <listener class-name="reportGenerator.TestListener"/>
+        <listener class-name="reportGenerator.AnnotationTransformer"/>
+    </listeners>
+	<test name="RegressionTest">
+
+		<classes>
+			<class name="amazonTest.HeaderTest">
+				<methods>
+					<exclude name="AP_1005"/>
+				</methods>
+			</class>
+			<class name="amazonTest.Product" ></class>
+			<class name="amazonTest.SearchTest" ></class>
+			<class name="amazonTest.SignInTest" ></class>
+		</classes>
+	</test>
+</suite>
